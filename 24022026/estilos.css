@@ -1,0 +1,10 @@
+/* Configuracion general */
+body{
+    margin: 0;
+    padding: 20px;
+    /*espacios respecto a  nuestro navegador*/
+    font-family:Arial, sans-serif;
+    background-color: aliceblue;
+    
+
+}
