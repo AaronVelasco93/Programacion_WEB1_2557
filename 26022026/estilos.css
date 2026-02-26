@@ -67,3 +67,45 @@ main{
     border-radius: 15px;
     margin-bottom: 25px;
 }
+article{
+    background: rgba(59, 69, 110, 0.766);
+    padding: 10px;
+    border-radius: 10px;
+}
+section{
+    background: rgb(131, 161, 71);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.main-footer{
+    background: rgba(188, 132, 141, 0.861);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+ /* aside */
+
+ aside{
+    background: rgb(44, 230, 230);
+    padding: 20px;
+    border-radius: 10px;
+
+ }
+ aside section{
+    background: rgba(136, 213, 20, 0.771);
+    margin-bottom: 20px;
+ }
+
+
+ /* footer general */
+ .page-footer{
+    margin-top: 20px;
+    background: palevioletred;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+ }
