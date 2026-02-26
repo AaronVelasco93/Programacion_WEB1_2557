@@ -1,0 +1,20 @@
+/* selecor general de h1 */
+
+h1{
+    color: chocolate;
+}
+/* 
+generamos una clase con un punto -> . 
+despues ponemos el nombre de la clase que vamos a asignar, 
+nosotros lo inventamos */
+.tituloAzul{
+    color: blue;
+}
+.tituloRojo{
+    color: red;
+}
+
+.tituloBorde{
+    border: 1px solid black;
+    background-color: yellow;
+}
