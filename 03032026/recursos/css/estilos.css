@@ -1,0 +1,55 @@
+body{
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+/* Encabezado */
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1{
+    margin: 0px;
+    padding-left: 30px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding-right: 40px;
+}
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+
+}
+.anclas{
+    color: rgba(240, 248, 255, 0.817);
+}
+section{
+   padding: 20px;
+   margin: 10px;
+   background-color: aliceblue;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px black;
+}
+
+h2{
+    color: #8b3131;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+   border-radius: 15px;
+    
+}
+
