@@ -37,17 +37,20 @@
     <h1>Editar Usuario</h1>
     <form action="actualizar.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
+        
         <label for="nombre">Nombre:</label>
-        
         <input type="text" name="nombre" id="nombre" value="<?php echo $nombre; ?>" required><br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" value="<?php echo $row['apellido']; ?>" required><br><br>
+
         <label for="email">Correo:</label>
-        
         <input type="email" name="email" id="email" value="<?php echo $email; ?>" required><br><br>
-        <label for="telefono">Telefono:</label>
         
+        <label for="telefono">Telefono:</label>
         <input type="text" name="telefono" id="telefono" value="<?php echo $telefono; ?>" required><br><br>
-        <input type="submit" value="Actualizar">
-    </form>
+        
+        <button type="submit">Actualizar</button>
 
 </body>
 </html>

@@ -17,6 +17,7 @@
         <tr>
             <th>ID</th>
             <th>Nombre</th>
+            <th>Apellido</th>
             <th>Correo</th>
             <th>Telefono</th>
             <th>Acciones</th>
@@ -25,6 +26,7 @@
         <tr>
             <td><?php echo $row['id']; ?></td>
             <td><?php echo $row['nombre']; ?></td>
+            <td><?php echo $row['apellido']; ?></td>
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['telefono']; ?></td>
             <td>
