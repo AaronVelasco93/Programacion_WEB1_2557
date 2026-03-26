@@ -1,6 +1,6 @@
 <?php
     include 'conexion.php';
-    $sql = "SELECT * FROM usuarios";
+    $sql = "SELECT nombre FROM usuarios";
     
     $result = $conn->query($sql);
     // echo $result;
