@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Registro usuarios</h1>
+    <a href="listar.php">Ver usuarios</a>
     <form action="registraUsuario.php" method="get">
         <label for="">Nombre</label>
             <input type="text" name="nombre" id="">
