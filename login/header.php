@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav>
-    <h1>aqui esta el nav hola Aaron</h1>
+    <h1>Login</h1>
     <p class="descripcion"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae delectus minus, libero sequi ex veniam fugiat hic necessitatibus atque provident. Repellendus adipisci, magni voluptatem ipsa tenetur mollitia numquam eligendi.
     Dignissimos, tempora consequuntur? Voluptatem totam fuga qui incidunt asperiores vel nesciunt atque ad, optio voluptatum est harum quos dolore minima tenetur quidem error beatae iure ab nobis? Illo, incidunt magnam.
     Animi magni vero, iste quos voluptates optio atque nihil maxime, qui excepturi, odit exercitationem esse minima. Aperiam officiis natus eius fugiat porro cumque id voluptate consequuntur voluptatem. In, corporis quam?
