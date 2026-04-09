@@ -1,16 +1,17 @@
 <?php 
 session_start();
-include 'conexion.php';
+include "conexion.php";
 $usuario = $_POST['user'];
 $password = $_POST['pass'];
 
-echo $usuario;
-echo "<br>";
-echo $password;
+$consulta = "SELECT COUNT(*) as contar FROM usuarios WHERE user='$usuario' AND password='$password'";
+$ejecutar = mysqli_query($conn, $consulta);
+$array = mysqli_fetch_array($ejecutar);
 
-// Almacenar datos en la sesión
-$_SESSION["usuario"] = $usuario;
-$_SESSION["password"] = $password;
+if($array['contar'] > 0){
+    $_SESSION['usuario'] = $usuario;
+    header("location: ../dashboard.php");
+}else{  
+    echo "Usuario o contraseña incorrecta";
+}
 ?>
-<a href="pagin1.php">pagina 1</a>
-
