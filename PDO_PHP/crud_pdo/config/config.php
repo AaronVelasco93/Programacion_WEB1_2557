@@ -6,9 +6,10 @@
 // y poner las credenciales directamente en el codigo fuente, lo que es una mala practica de seguridad
 
 return[
-    "DB_HOST" => "localhost:3306",
-    "DB_NAME" => "crud_pdo",
-    "DB_USER" => "root",
-    "DB_PASSWORD" => "Aaron123",
-    "DB_CHARSET" => "utf8mb4",
+    "DB_HOST" => getenv("DB_HOST") ?: "localhost",
+    "DB_PORT" => getenv("DB_PORT") ?: "3306",
+    "DB_NAME" => getenv("DB_NAME") ?: "crud_pdo",
+    "DB_USER" => getenv("DB_USER") ?: "root",
+    "DB_PASSWORD" => getenv("DB_PASSWORD") ?: "Aaron123",
+    "DB_CHARSET" => getenv("DB_CHARSET") ?: "utf8mb4",
 ];

@@ -5,6 +5,7 @@ $config = require __DIR__ . "/config.php";
 
 // Estraer las variables de configuracion de la base de datos
 $host = $config["DB_HOST"];
+$port = $config["DB_PORT"];
 $db = $config["DB_NAME"];
 $user = $config["DB_USER"];
 $password = $config["DB_PASSWORD"];
