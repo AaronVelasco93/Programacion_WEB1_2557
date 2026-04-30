@@ -1,5 +1,5 @@
 <?php
-require_once '../config/db.php';
+require_once __DIR__ . '/../config/db.php';
 // Variables para mostrar los errores y para rellenar los campos del formulario
 $error = "";// Variables para mostrar los errores y para rellenar los campos del formulario
 $nombre = ""; // Variable para el nombre del alumno
@@ -10,7 +10,6 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
     // 1.- Obtener los datos del formulario
     $nombre = trim($_POST['nombre'] ?? "");
     $email = trim($_POST['email'] ?? "");
-    echo "Nombre: $nombre, Email: $email";
 
     // 2.- Validaciones basicas
     if($nombre == "" || $email == ""){
@@ -54,14 +53,14 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
     <h1>Crear alumno</h1>
     <p><a href="index.php">&lt; Volver</a></p>
     <?php if($error): ?>
-        <p style="color:red;"><p ><?=  htmlspecialchars($error)?></p>
-    <?php endif; ?></p>
+        <p style="color:red;"><?=  htmlspecialchars($error)?></p>
+    <?php endif; ?>
     <form method="post">
         <label for="">Nombre:</label>
-        <input type="text" name="nombre" require id="" value="<?= htmlspecialchars($nombre)?>">
+        <input type="text" name="nombre" required id="" value="<?= htmlspecialchars($nombre)?>">
         <br>
         <label for="">Correo electronico:</label>
-        <input type="email" name="email" require id="" value="<?= htmlspecialchars($email)?>">
+        <input type="email" name="email" required id="" value="<?= htmlspecialchars($email)?>">
         <br>
         <button type="submit">Crear</button>
 

@@ -32,7 +32,7 @@ require_once __DIR__ . '/../config/db.php';
     <tbody>
         <!-- si no hay alumnos ? -->
          <?php if(count($alumnos) === 0):  ?>
-            <tr><td colsapn = "5" >No hay registros</td></tr>
+            <tr><td colspan="5">No hay registros</td></tr>
         <?php else: ?>
             <?php foreach($alumnos as $a): ?>
                 <tr>
@@ -41,8 +41,8 @@ require_once __DIR__ . '/../config/db.php';
                     <td><?= htmlspecialchars($a["email"])?></td>
                     <td><?= htmlspecialchars($a["created_at"])?></td>
                     <td>
-                        <a href="edit.php?id=<?= urldecode($a["id"]) ?>">Editar</a>
-                        <a href="delete.php?id=<?= urldecode($a["id"]) ?>">Eliminar</a>
+                        <a href="edit.php?id=<?= urlencode($a["id"]) ?>">Editar</a>
+                        <a href="delete.php?id=<?= urlencode($a["id"]) ?>">Eliminar</a>
                     </td>
                 </tr>
             <?php  endforeach;?>

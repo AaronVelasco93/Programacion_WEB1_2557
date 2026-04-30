@@ -18,7 +18,7 @@ services:
       DB_PORT: 3306                 # Puerto interno de MySQL en el contenedor
       DB_NAME: ${MYSQL_DATABASE:-crud_pdo}
       DB_USER: ${MYSQL_USER:-crud_user}
-      DB_PASS: ${MYSQL_PASSWORD:-crud_pass}
+      DB_PASSWORD: ${MYSQL_PASSWORD:-crud_pass}
       DB_CHARSET: utf8mb4
     volumes:
       # Montar el código fuente local en el contenedor

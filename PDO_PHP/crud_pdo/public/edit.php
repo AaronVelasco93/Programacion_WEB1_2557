@@ -67,7 +67,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <p><a href="index.php"><-Volver a la lista</a></p>
     <br>
     <?php if($error):?>
-        <p style="color:red;"><p ><?=  htmlspecialchars($error)?></p>
+        <p style="color:red;"><?=  htmlspecialchars($error)?></p>
     <?php endif; ?>
     <form method="post">
         <label for="">Nombre</label>

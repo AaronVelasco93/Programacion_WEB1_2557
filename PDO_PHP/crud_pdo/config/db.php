@@ -20,11 +20,10 @@ $options = [
 
 
 try{
-    // El DNS indica el motor + host + nombre  + charset
-    $dns = "mysql:host=$host;dbname=$db;charset=$charset";
+    // El DSN indica el motor + host + puerto + nombre + charset
+    $dns = "mysql:host=$host;port=$port;dbname=$db;charset=$charset";
     // Crear una nueva instancia de PDO
     $pdo = new PDO($dns, $user, $password, $options);
-    echo "Conexion a la base de datos establecida correctamente";
 
 }catch(PDOException $e){
     // Si hay un error al conectar a la base de datos, mostrar el mensaje de error
